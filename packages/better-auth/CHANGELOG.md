@@ -1,5 +1,24 @@
 # better-auth
 
+## 1.8.0-beta.3
+
+### Minor Changes
+
+- [#11864](https://github.com/better-auth/better-auth/pull/11864) [`b460b45`](https://github.com/better-auth/better-auth/commit/b460b45d61af03e29bf7cdf6ff9cf94c1832f9ae) Thanks [@bytaesu](https://github.com/bytaesu)! - The Gumroad OAuth helper now returns `undefined` for accounts without a name, matching its declared profile type. Profile mappings should handle a missing name.
+
+- [#11863](https://github.com/better-auth/better-auth/pull/11863) [`94c73d4`](https://github.com/better-auth/better-auth/commit/94c73d4a8338622e3f306fb37e8f500429512226) Thanks [@bytaesu](https://github.com/bytaesu)! - The Patreon OAuth helper now normalizes null names and images to missing values while preserving empty strings. Email can remain null or be omitted when email access is not granted.
+
+### Patch Changes
+
+- Updated dependencies [[`7e635bc`](https://github.com/better-auth/better-auth/commit/7e635bce38e0ef7a7ece88ea9984487596f5d79d), [`41ebe9a`](https://github.com/better-auth/better-auth/commit/41ebe9ab6787cd96f56338bfa18e62faba0e354f), [`cbf3a97`](https://github.com/better-auth/better-auth/commit/cbf3a97902f8d0a2965aac284eaba3d631b88211)]:
+  - @better-auth/core@1.8.0-beta.3
+  - @better-auth/drizzle-adapter@1.8.0-beta.3
+  - @better-auth/kysely-adapter@1.8.0-beta.3
+  - @better-auth/memory-adapter@1.8.0-beta.3
+  - @better-auth/mongo-adapter@1.8.0-beta.3
+  - @better-auth/prisma-adapter@1.8.0-beta.3
+  - @better-auth/telemetry@1.8.0-beta.3
+
 ## 1.8.0-beta.2
 
 ### Patch Changes

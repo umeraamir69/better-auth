@@ -1,5 +1,15 @@
 # @better-auth/core
 
+## 1.8.0-beta.3
+
+### Minor Changes
+
+- [#11867](https://github.com/better-auth/better-auth/pull/11867) [`7e635bc`](https://github.com/better-auth/better-auth/commit/7e635bce38e0ef7a7ece88ea9984487596f5d79d) Thanks [@bytaesu](https://github.com/bytaesu)! - Discord profile mappings now handle optional metadata and expose avatar decoration, collectible, and primary guild details. Missing email verification defaults to false.
+
+- [#11855](https://github.com/better-auth/better-auth/pull/11855) [`41ebe9a`](https://github.com/better-auth/better-auth/commit/41ebe9ab6787cd96f56338bfa18e62faba0e354f) Thanks [@bytaesu](https://github.com/bytaesu)! - `LinearUser.avatarUrl` is now required and typed as `string | null`; custom profiles must include it, and mappings must handle `null`. Null avatars preserve stored images during enabled profile updates, and authorization scopes are comma-separated.
+
+- [#11862](https://github.com/better-auth/better-auth/pull/11862) [`cbf3a97`](https://github.com/better-auth/better-auth/commit/cbf3a97902f8d0a2965aac284eaba3d631b88211) Thanks [@bytaesu](https://github.com/bytaesu)! - PayPal profile types now reflect omitted names, email, and verification claims when personal permissions are not granted. Missing email verification defaults to false; profile mappings must supply an email when the provider omits it.
+
 ## 1.8.0-beta.2
 
 ### Minor Changes
